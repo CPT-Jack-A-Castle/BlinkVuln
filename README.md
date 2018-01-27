@@ -6,8 +6,8 @@ Recently, I discovered a glaring vulnerability within the Blink Camera System Sy
 
  1. A computer running linux (Kali Linux preferably) 
  2. Nmap, and python-nmap
- 3. Netifaces
- 4. Scapy
+ 3. Scapy
+ 4. termcolor
  5. Python 3
 
 # Analysis
@@ -34,7 +34,10 @@ Through preliminary estimates, I found this vulnerability to have a medium criti
 # My experience with Blink
 My experience with Blink has been less than satisfactory. When I first discovered the vulnerability, it was more difficult than it should be to find their [responsible disclosure webpage](https://blinkforhome.com/pages/responsible-disclosure-policy). On that site, they list the email info@blinkforhome.com as who to contact if a vulnerability is discovered. I did this, and emailed the listed email. They responded by telling me that they were *Sorry I was having this issue with my Sync Module*.<sup>2</sup> I was only truly able to report the vulnerability after two different hour long phone calls with tech support, in which I had to explain what I was trying to do each time. Even then, I did not receive any updates until today, when Blink tech support said that they were referring the ticket to engineering *today* almost three weeks after the initial report. 
 Blinks responsible disclosure policy is a joke, and I can only hope that Amazon can at least make it a little better. For the sake of their customers who bought a product looking for peace of mind.
+### Credit
+Thank you to @chrizator writing netattack, which was used for the deauth portions of this simple script!
 
+### Footnotes
 <sup>1</sup>A screenshot of the app when the Sync Module is being deauthed can be found [here](https://i.imgur.com/8aiAtfH.png).
 
 <sup>2</sup>A screenshot of the email exchange can be found [here](https://imgur.com/xYiFiDu).
