@@ -1,6 +1,7 @@
 # Blink Sync Module Vulnerability 
 
 Recently, I discovered a glaring vulnerability within the Blink Camera System Sync Module. I have not had a good experience with their team, and I will go over this later in this page.
+
 CVE ID: CVE-2018-20161
 
 # Requirements
